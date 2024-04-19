@@ -1,0 +1,54 @@
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 19px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $ff-montserrat;
+  text-align: center;
+  color: $color-main-light;
+  text-decoration: none;
+
+  background-color: $color-basic-accent;
+  border: 1px solid $color-basic-accent;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $color-accent;
+
+    background-color: $color-main-light;
+    border: 1px solid $color-accent;
+  }
+
+  &:active {
+    color: $color-main-light;
+
+    background: $color-accent;
+    border: 1px solid $color-accent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-accent;
+
+    background-color: $color-main-light;
+    border: 1px solid $color-main-light;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-main-light;
+
+    background-color: $color-disabled;
+    border: 1px solid $color-disabled;
+
+    pointer-events: none;
+  }
+}

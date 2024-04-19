@@ -2,3 +2,22 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+
+// Global
+
+@import "global/variables";
+@import "global/fonts";
+@import "global/global";
+@import "global/utils";
+
+// Blocks
+
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/main-content";
+@import "blocks/logo";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/hero";
