@@ -1,5 +1,6 @@
 .nav {
   position: relative;
+  z-index: 10;
 
   display: grid;
 
@@ -166,6 +167,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 4px;
+  padding-bottom: 39px;
 
   background-color: $color-basic-accent;
 
@@ -174,6 +176,7 @@
     left: -45px;
 
     padding-top: 17px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -287,7 +290,12 @@
 }
 
 .nav--opened .nav__list {
-  display: flex;
+  @media (width <= 1439px) {
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: calc(100vh - 100%);
+    overflow-y: auto;
+  }
 }
 
 .nav__contacts {

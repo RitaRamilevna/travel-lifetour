@@ -12,12 +12,15 @@
   text-align: center;
   color: $color-main-light;
   text-decoration: none;
+  word-break: break-all;
 
   background-color: $color-basic-accent;
   border: 1px solid $color-basic-accent;
   cursor: pointer;
 
   transition: all 0.3s ease-in-out;
+
+  user-select: none;
 
   &:hover {
     color: $color-accent;

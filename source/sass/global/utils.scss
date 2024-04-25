@@ -46,3 +46,26 @@
   border: none;
   cursor: pointer;
 }
+
+.body--scroll-lock {
+  position: fixed;
+
+  width: 100%;
+  min-width: 320px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: auto;
+    left: 0;
+    z-index: 9;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(45, 56, 63, 0.6);
+
+    pointer-events: none;
+  }
+}

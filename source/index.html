@@ -97,7 +97,7 @@
 
               </li>
 
-              <li class="hero__item swiper-slide" tabindex="0">
+              <li class="hero__item swiper-slide" tabindex="-1">
                 <div class="hero__item-wrapper">
                   <div class="hero__item-content">
                     <h3>Невероятная природа Камчатки</h3>
@@ -124,11 +124,11 @@
 
               </li>
 
-              <li class="hero__item swiper-slide" tabindex="0">
+              <li class="hero__item swiper-slide" tabindex="-1">
                 <div class="hero__item-wrapper">
                   <div class="hero__item-content">
                     <h3>Магические пейзажи Алтайского Края</h3>
-                    <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                    <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
                   </div>
                   <a class="hero__content-button button" href="#form">Смотреть тур</a>
 
@@ -144,15 +144,15 @@
             </ul>
 
             <div class="hero__pagination swiper-pagination">
-              <div class="hero__pagination-bullet swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-current="true">
+              <button class="hero__pagination-bullet swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true" type="button" tabindex="0">
                 <span class="visually-hidden">Перейти к первому слайду.</span>
-              </div>
-              <div class="hero__pagination-bullet swiper-pagination-bullet" tabindex="0" role="button" aria-current="true">
+              </button>
+              <button class="hero__pagination-bullet swiper-pagination-bullet" type="button" tabindex="-1">
                 <span class="visualy-hidden">Перейти ко второму слайду.</span>
-              </div>
-              <div class="hero__pagination-bullet swiper-pagination-bullet" tabindex="0" role="button" aria-current="true">
+              </button>
+              <button class="hero__pagination-bullet swiper-pagination-bullet" type="button" tabindex="-1">
                 <span class="visualy-hidden">Перейти к третьему слайду.</span>
-              </div>
+              </button>
             </div>
 
           </div>
@@ -161,11 +161,233 @@
 
       </section>
 
-      <!-- <section class="tours" id="tours" data-test="tours">
-        tours
+      <section class="tours" id="tours" data-test="tours">
+
+        <div class="tours__container container">
+
+          <div class="tours__swiper swiper">
+
+            <div class="tours__title title">
+              <h2 data-content="Ближайшие туры">Ближайшие туры</h2>
+            </div>
+
+            <div class="tours__buttons swiper-button">
+              <button class="tours__button tours__button--prev button-reset swiper-button swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+              </button>
+
+              <button class="tours__button tours__button--next  button-reset swiper-button swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+              </button>
+            </div>
+
+            <ul class="tours__list list-reset swiper-wrapper">
+
+              <li class="tours__item swiper-slide">
+
+                <div class="tours__card-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/tours/1-tours-card@1.webp 1x, img/tours/1-tours-card@2.webp 2x">
+                    <img src="img/tours/1-tours-card@1.jpg" srcset="img/tours/1-tours-card@2.jpg 2x" alt="Фотография ущелья в Приэльбрусье горной рекой и горным хребтом." width="380" height="416">
+                  </picture>
+                </div>
+
+                <div class="tours__content">
+                  <div class="tours__card-info">
+                    <p class="tours__place">Кавказ</p>
+                    <div class="tours__stats">
+                      <p class="tours__stats-days">4 дня</p>
+                      <p class="tours__stats-nights">3 ночи</p>
+                    </div>
+                  </div>
+
+                  <h3 class="tours__card-title">Путешествие вокруг Эльбруса</h3>
+
+                  <div class="tours__card-details">
+
+                    <dl class="tours__card-level">
+                      <dt class="tours__card-term">Сложность:</dt>
+                      <dd class="tours__card-description">
+                        <svg width="84" height="16" aria-hidden="true">
+                          <title class="visually-hidden">4 из 5 звезды.</title>
+                          <use href="/__spritemap#sprite-stars-4-out-of-5"></use>
+                        </svg>
+                      </dd>
+                    </dl>
+
+                    <dl class="tours__card-date">
+                      <dt class="tours__card-term">Даты набора:</dt>
+                      <dd class="tours__card-description">12.06–19.06</dd>
+                    </dl>
+
+                    <dl class="tours__card-group">
+                      <dt class="tours__card-term">Группа:</dt>
+                      <dd class="tours__card-description">до 15 чел.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="tours__item swiper-slide">
+
+                <div class="tours__card-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/tours/2-tours-card@1.webp 1x, img/tours/2-tours-card@2.webp 2x">
+                    <img src="img/tours/2-tours-card@1.jpg" srcset="img/tours/2-tours-card@2.jpg 2x" alt="Снежные вершины Белухи." width="380" height="416">
+                  </picture>
+                </div>
+
+                <div class="tours__content">
+                  <div class="tours__card-info">
+                    <p class="tours__place">Алтай</p>
+                    <div class="tours__stats">
+                      <p class="tours__stats-days">14 дней</p>
+                      <p class="tours__stats-nights">13 ночей</p>
+                    </div>
+                  </div>
+
+                  <h3 class="tours__card-title">Путь к подножию Белухи</h3>
+
+                  <div class="tours__card-details">
+
+                    <dl class="tours__card-level">
+                      <dt class="tours__card-term">Сложность:</dt>
+                      <dd class="tours__card-description">
+                        <svg width="84" height="16" aria-hidden="true">
+                          <title class="visually-hidden">3 из 5 звезд.</title>
+                          <use href="/__spritemap#sprite-stars-3-out-of-5"></use>
+                        </svg>
+                      </dd>
+                    </dl>
+
+                    <dl class="tours__card-date">
+                      <dt class="tours__card-term">Даты набора:</dt>
+                      <dd class="tours__card-description">14.06–23.06</dd>
+                    </dl>
+
+                    <dl class="tours__card-group">
+                      <dt class="tours__card-term">Группа:</dt>
+                      <dd class="tours__card-description">до 25 чел.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="tours__item swiper-slide">
+
+                <div class="tours__card-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/tours/3-tours-card@1.webp 1x, img/tours/3-tours-card@2.webp 2x">
+                    <img src="img/tours/3-tours-card@1.jpg" srcset="img/tours/3-tours-card@2.jpg 2x" alt="Горная вершина в облаках." width="380" height="416">
+                  </picture>
+                </div>
+
+                <div class="tours__content">
+                  <div class="tours__card-info">
+                    <p class="tours__place">Адыгея</p>
+                    <div class="tours__stats">
+                      <p class="tours__stats-days">7 дней</p>
+                      <p class="tours__stats-nights">6 ночей</p>
+                    </div>
+                  </div>
+
+                  <h3 class="tours__card-title">Через Фишт
+                    к Чёрному морю и обратно</h3>
+
+                  <div class="tours__card-details">
+
+                    <dl class="tours__card-level">
+                      <dt class="tours__card-term">Сложность:</dt>
+                      <dd class="tours__card-description">
+                        <svg width="84" height="16" aria-hidden="true">
+                          <title class="visually-hidden">4 из 5 звезды.</title>
+                          <use href="/__spritemap#sprite-stars-4-out-of-5"></use>
+                        </svg>
+                      </dd>
+                    </dl>
+
+                    <dl class="tours__card-date">
+                      <dt class="tours__card-term">Даты набора:</dt>
+                      <dd class="tours__card-description">15.07–19.07</dd>
+                    </dl>
+
+                    <dl class="tours__card-group">
+                      <dt class="tours__card-term">Группа:</dt>
+                      <dd class="tours__card-description">до 22 чел.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="tours__item swiper-slide">
+
+                <div class="tours__card-image">
+                  <picture>
+                    <source type="image/webp" srcset="img/tours/4-tours-card@1.webp 1x, img/tours/4-tours-card@2.webp 2x">
+                    <img src="img/tours/4-tours-card@1.jpg" srcset="img/tours/4-tours-card@2.jpg 2x" alt="Фото вершины Манарага с человеком на фоне скалистой вершины." width="380" height="416">
+                  </picture>
+                </div>
+
+                <div class="tours__content">
+                  <div class="tours__card-info">
+                    <p class="tours__place">Урал</p>
+                    <div class="tours__stats">
+                      <p class="tours__stats-days">9 дней</p>
+                      <p class="tours__stats-nights">10 ночей</p>
+                    </div>
+                  </div>
+
+                  <h3 class="tours__card-title">Восхождение
+                    Манарага</h3>
+
+                  <div class="tours__card-details">
+
+                    <dl class="tours__card-level">
+                      <dt class="tours__card-term">Сложность:</dt>
+                      <dd class="tours__card-description">
+                        <svg width="84" height="16" aria-hidden="true">
+                          <title class="visually-hidden">5 из 5 звезд.</title>
+                          <use href="/__spritemap#sprite-stars-5-out-of-5"></use>
+                        </svg>
+                      </dd>
+                    </dl>
+
+                    <dl class="tours__card-date">
+                      <dt class="tours__card-term">Даты набора:</dt>
+                      <dd class="tours__card-description">12.07–19.07</dd>
+                    </dl>
+
+                    <dl class="tours__card-group">
+                      <dt class="tours__card-term">Группа:</dt>
+                      <dd class="tours__card-description">до 7 чел.</dd>
+                    </dl>
+
+                  </div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <a class="tours__link link-reset" href="#advantages">
+            <span class="tours__link-text">Показать все туры</span>
+            <svg width="9" height="14" aria-hidden="true">
+              <use href="/__spritemap#sprite-link-arrow"></use>
+            </svg>
+          </a>
+
+        </div>
       </section>
 
-      <section class="training" id="training" data-test="training">
+      <!-- <section class="training" id="training" data-test="training">
         training
       </section>
 
