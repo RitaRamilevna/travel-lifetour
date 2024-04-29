@@ -74,6 +74,19 @@
   }
 }
 
+.tours__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 580px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
 .tours__buttons {
   display: none;
 
@@ -172,22 +185,6 @@
     bottom: 12px;
 
     transform: rotate(180deg);
-  }
-}
-
-.tours__button.swiper-button-disabled {
-  background-color: $color-disabled;
-}
-
-.tours__title {
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
   }
 }
 

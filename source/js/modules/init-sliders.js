@@ -88,3 +88,45 @@ export function initToursSlider() {
 
 }
 
+export function initTrainingSlider() {
+  const trainingSlider = new Swiper('.training__swiper', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    grabCursor: true,
+    speed: 500,
+    observer: true,
+    observeParents: true,
+
+    navigation: {
+      nextEl: '.training__button--next',
+      prevEl: '.training__button--prev',
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        initialSlide: 2,
+        slidesPerView: 1,
+        spaceBetween: 15,
+
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      // when window width is >= 1440px
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        simulateTouch: false,
+
+      },
+    },
+  });
+
+  return trainingSlider;
+
+}
+
