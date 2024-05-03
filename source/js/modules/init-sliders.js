@@ -130,3 +130,86 @@ export function initTrainingSlider() {
 
 }
 
+export function initReviewsSlider() {
+  const reviewsSlider = new Swiper('.reviews__swiper', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+    },
+
+    grabCursor: true,
+    speed: 500,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+      },
+      // when window width is >= 1440px
+      1440: {
+        slidesPerView: 'auto',
+        spaceBetween: 110,
+        simulateTouch: false,
+
+      },
+    },
+  });
+
+  return reviewsSlider;
+
+}
+
+
+export function initAdvantagesSlider() {
+  const advantagesSlider = new Swiper('.advantages__swiper', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    navigation: {
+      nextEl: '.advantages__button--next',
+      prevEl: '.advantages__button--prev',
+    },
+
+    grabCursor: true,
+    speed: 500,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    simulateTouch: false,
+
+    breakpoints: {
+      // when window width is >= 1440px
+      1440: {
+        slidesPerGroup: 2,
+        initialSlide: 2,
+        spaceBetween: 30,
+        simulateTouch: false,
+        centeredSlides: true,
+
+      },
+    },
+  });
+
+  if (window.innerWidth < 1440) {
+    advantagesSlider.destroy();
+  }
+
+  return advantagesSlider;
+
+}
+

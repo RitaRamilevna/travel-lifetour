@@ -238,6 +238,12 @@
   }
 }
 
+.tours__item.swiper-slide:nth-child(3)::before {
+  @media (min-width: $desktop-width) {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
 .tours__card-image {
   display: block;
   width: 100%;
@@ -400,6 +406,10 @@
 
     background-color: $color-main-light;
     opacity: 0.2;
+
+    @media (min-width: $desktop-width) {
+      top: -16px;
+    }
   }
 }
 
@@ -450,11 +460,24 @@
     line-height: 16px;
   }
 
-  svg {
+  @media (min-width: $desktop-width) {
+    padding: 9px 9px 10px;
+  }
+
+  & svg {
     z-index: 2;
+
+    display: block;
+    flex-shrink: 0;
+    width: 10px;
+    height: 14px;
 
     fill: none;
     stroke: currentColor;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 1px;
+    }
   }
 
   &:hover {
@@ -479,5 +502,5 @@
 }
 
 .tours__link-text {
-  padding-right: 12px;
+  padding-right: 10px;
 }

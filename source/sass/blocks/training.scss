@@ -43,12 +43,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 44px;
-    padding-bottom: 62px;
+    padding-top: 45px;
+    padding-bottom: 64px;
   }
 }
 
@@ -230,7 +230,6 @@
 
 .training__list.swiper-wrapper {
   box-sizing: border-box;
-  margin: 0;
   margin: 0 auto;
   padding-left: 0;
 }
@@ -240,7 +239,7 @@
   max-width: 290px;
   height: auto;
   min-height: 356px;
-  padding: 14px 14px;
+  padding: 14px;
 
   background-color: $color-main-light;
   border: 1px solid rgba(2, 102, 193, 0.1);
@@ -248,7 +247,7 @@
   @media (min-width: $tablet-width) {
     max-width: 678px;
     min-height: 388px;
-    padding: 15px 15px;
+    padding: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -278,6 +277,11 @@
   @media (min-width: $tablet-width) {
     width: auto;
     height: 199px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    height: 200px;
   }
 }
 
@@ -404,7 +408,7 @@
     background-color: $color-basic-accent;
   }
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (width >= 768px) and (width <= 1439px) {
     justify-content: space-between;
     margin-left: 0;
     padding: 0 35px;
@@ -442,7 +446,7 @@
 
   line-height: 150%;
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (width >= 768px) and (width <= 1439px) {
     &:nth-child(1) {
       order: 1; /* Карта */
     }
@@ -502,7 +506,7 @@
     border-radius: 50%;
   }
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (width >= 768px) and (width <= 1439px) {
     &::after {
       display: none;
     }
