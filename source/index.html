@@ -422,7 +422,7 @@
                   <div class="training__card-image">
                     <picture>
                       <source type="image/webp" srcset="img/training/1-training@1.webp 1x, img/training/1-training@2.webp 2x">
-                      <img src="img/training/1-training@1.jpg" srcset="img/training/1-training@2.jpg 2x" alt="Улыбающийся мужчина с альпинистской экипировкой, туристическим рюкзаком на фоне горного пейзажа." width="255" height="200">
+                      <img src="img/training/1-training@1.jpg" srcset="img/training/1-training@2.jpg 2x" alt="Улыбающийся мужчина с альпинистской экипировкой, туристическим рюкзаком на фоне горного пейзажа." width="243" height="200">
                     </picture>
                   </div>
 
@@ -839,11 +839,112 @@
         </div>
       </section>
 
-      <!-- <section class="gallery" id="gallery" data-test="gallery">
-        gallery
+      <section class="gallery" id="gallery" data-test="gallery">
+        <div class="gallery__container container">
+
+          <div class="gallery__swiper swiper">
+
+            <div class="gallery__intro">
+
+              <div class="gallery__title title">
+                <h2 data-content="Фотогалерея">Фотогалерея</h2>
+              </div>
+
+              <p>Добавляйте фото в с хэштегом #лайфтур,
+                а&nbsp;также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+            </div>
+
+            <div class="gallery__buttons swiper-button">
+              <button class="gallery__button gallery__button--prev button-reset swiper-button swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+              </button>
+
+              <button class="gallery__button gallery__button--next  button-reset swiper-button swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+              </button>
+            </div>
+
+            <ul class="gallery__list list-reset swiper-wrapper">
+
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/1-gallery-desktop@1.webp 1x, img/gallery/1-gallery-desktop@2.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/1-gallery-tablet@1.webp 1x, img/gallery/1-gallery-tablet@2.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/1-gallery-mobile@1.webp 1x, img/gallery/1-gallery-mobile@2.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/1-gallery-desktop@1.jpg, img/gallery/1-gallery-desktop@2.jpg 2x">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/1-gallery-tablet@1.jpg, img/gallery/1-gallery-tablet@2.jpg 2x">
+                  <img src="img/gallery/1-gallery-mobile@1.jpg" srcset="img/gallery/1-gallery-mobile@2.jpg 2x" alt="Мужчина в трекинговой одежде и с рюкзаком на фоне горного пейзажа." width="158" height="266">
+                </picture>
+              </li>
+
+              <li class="gallery__item  swiper-slide">
+                <ul class="gallery__list-images list-reset">
+                  <li class="gallery__item-images">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/2-gallery-desktop@1.webp 1x, img/gallery/2-gallery-desktop@2.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/2-gallery-tablet@1.webp 1x, img/gallery/2-gallery-tablet@2.webp 2x">
+                      <source type="image/webp" srcset="img/gallery/2-gallery-mobile@1.webp 1x, img/gallery/2-gallery-mobile@2.webp 2x">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/2-gallery-desktop@1.jpg, img/gallery/2-gallery-desktop@2.jpg 2x">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/2-gallery-tablet@1.jpg, img/gallery/2-gallery-tablet@2.jpg 2x">
+                      <img src="img/gallery/2-gallery-mobile@1.jpg" srcset="img/gallery/2-gallery-mobile@2.jpg 2x" alt="Вечерние посиделки большой компании у костра в лесу." width="284" height="233">
+                    </picture>
+                  </li>
+
+                  <li class="gallery__item-images">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/3-gallery-desktop@1.webp 1x, img/gallery/3-gallery-desktop@2.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/3-gallery-tablet@1.webp 1x, img/gallery/3-gallery-tablet@2.webp 2x">
+                      <source type="image/webp" srcset="img/gallery/3-gallery-mobile@1.webp 1x, img/gallery/3-gallery-mobile@2.webp 2x">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/3-gallery-desktop@1.jpg, img/gallery/3-gallery-desktop@2.jpg 2x">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/3-gallery-tablet@1.jpg, img/gallery/3-gallery-tablet@2.jpg 2x">
+                      <img src="img/gallery/3-gallery-mobile@1.jpg" srcset="img/gallery/3-gallery-mobile@2.jpg 2x" alt="Рука с компасом на фоне горного хребта." width="284" height="233">
+                    </picture>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/4-gallery-desktop@1.webp, img/gallery/4-gallery-desktop@2.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/4-gallery-tablet@1.webp 1x, img/gallery/4-gallery-tablet@2.webp 2x">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/4-gallery-desktop@1.jpg, img/gallery/4-gallery-desktop@2.jpg 2x">
+                  <img src="img/gallery/4-gallery-tablet@1.jpg" srcset="img/gallery/4-gallery-tablet@2.jpg 2x" alt="Туристы в связке пускаются по тропе на фоне горной вершины." width="158" height="266">
+                </picture>
+              </li>
+
+              <li class="gallery__item  swiper-slide">
+                <ul class="gallery__list-images list-reset">
+                  <li class="gallery__item-images">
+                    <picture>
+                      <source type="image/webp" srcset="img/gallery/5-gallery-desktop@1.webp 1x, img/gallery/5-gallery-desktop@2.webp 2x">
+                      <img src="img/gallery/5-gallery-desktop@1.jpg" srcset="img/gallery/5-gallery-desktop@2.jpg 2x" alt="Турист в кошках идёт по оледеневшей тропе." width="284" height="233">
+                    </picture>
+                  </li>
+
+                  <li class="gallery__item-images">
+                    <picture>
+                      <source type="image/webp" srcset="img/gallery/6-gallery-desktop@1.webp 1x, img/gallery/6-gallery-desktop@2.webp 2x">
+                      <img src="img/gallery/6-gallery-desktop@1.jpg" srcset="img/gallery/6-gallery-desktop@2.jpg 2x" alt="Туристическая палатка на фоне звездного неба." width="284" height="223">
+                    </picture>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="gallery__item swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/7-gallery-desktop@1.webp 1x, img/gallery/7-gallery-desktop@2.webp 2x">
+                  <img src="img/gallery/7--desktop-desktop@1.jpg" srcset="img/gallery/7-gallery-desktop@2.jpg 2x" alt="Два молодых человпека разводят костёр на берегу реки." width="284" height="463">
+                </picture>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
       </section>
 
-      <section class="form" id="form" data-test="form">
+      <!--  <section class="form" id="form" data-test="form">
         form
       </section> -->
 

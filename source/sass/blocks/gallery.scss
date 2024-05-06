@@ -1,0 +1,247 @@
+.gallery__container {
+  width: 100%;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 2px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 105px;
+  }
+}
+
+.gallery__swiper.swiper {
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery__title {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.gallery__intro {
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.gallery__intro p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 157%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 606px;
+    margin-bottom: 45px;
+
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.gallery__buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.gallery__swiper .swiper-button-prev,
+.gallery__swiper .swiper-button-next {
+  top: 25px;
+  right: 45px;
+  z-index: 1;
+
+  width: 37px;
+  height: 35px;
+
+  background-color: $color-basic-accent;
+  border: 1px solid $color-basic-accent;
+
+  @media (min-width: $tablet-width) {
+    top: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+
+    background-color: $color-main-light;
+
+    mask-image: url("../img/sprite/arrow-button.svg");
+    mask-position: center center center center;
+    mask-repeat: no-repeat;
+    mask-size: 14px 9px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border-color: $color-accent;
+  }
+
+  &:hover::after {
+    background-color: $color-accent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:focus::after,
+  &:focus-visible::after {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
+
+  &:active::after {
+    background-color: $color-main-light;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $color-disabled;
+    border-color: $color-disabled;
+    opacity: 1;
+  }
+
+  &:disabled::after,
+  &--disabled::after {
+    background-color: $color-main-light;
+  }
+}
+
+.gallery__button.swiper-button-prev {
+  right: 86px;
+  left: auto;
+}
+
+.gallery__button.swiper-button-next {
+  &::after {
+    right: 10px;
+    bottom: 12px;
+
+    transform: rotate(180deg);
+  }
+}
+
+.gallery__list.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  min-height: 266px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    min-height: 284px;
+
+    gap: 5px;
+  }
+}
+
+.gallery__item.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 284px;
+    min-height: 463px;
+  }
+}
+
+.gallery__item picture {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.gallery__list-images {
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+
+  gap: 7px;
+  grid-template-columns: 100%;
+}
+
+.gallery__item-images {
+  display: flex;
+  align-items: stretch;
+}
+
+.gallery__item-images img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}

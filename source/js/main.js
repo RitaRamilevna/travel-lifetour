@@ -1,5 +1,5 @@
 import { menuOpen } from './modules/menu-open';
-import { initHeroSlider, initToursSlider, initTrainingSlider, initReviewsSlider, initAdvantagesSlider } from './modules/init-sliders';
+import { initHeroSlider, initToursSlider, initTrainingSlider, initReviewsSlider, initAdvantagesSlider, initGallerySlider } from './modules/init-sliders';
 
 document.addEventListener('DOMContentLoaded', () => {
   menuOpen();
@@ -8,5 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTrainingSlider();
   initReviewsSlider();
   initAdvantagesSlider();
+  initGallerySlider();
 
 });

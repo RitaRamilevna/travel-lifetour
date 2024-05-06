@@ -213,3 +213,44 @@ export function initAdvantagesSlider() {
 
 }
 
+export function initGallerySlider() {
+  const gallerySlider = new Swiper('.gallery__swiper', {
+    modules: [Navigation],
+    direction: 'horizontal',
+
+    navigation: {
+      nextEl: '.gallery__button--next',
+      prevEl: '.gallery__button--prev',
+    },
+
+    grabCursor: true,
+    speed: 500,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+    loop: true,
+    slidesPerView: 5,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+    }
+
+  });
+
+  if (window.innerWidth >= 1440) {
+    gallerySlider.destroy();
+  }
+
+  return gallerySlider;
+
+}
+

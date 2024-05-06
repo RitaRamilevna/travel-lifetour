@@ -52,14 +52,22 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 39px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-top: 117px;
-    padding-bottom: 185px;
+    padding-bottom: 184px;
     overflow: hidden;
+  }
+}
+
+.advantages__swiper.swiper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    overflow: visible;
   }
 }
 
@@ -167,14 +175,6 @@
   &:disabled::after,
   &--disabled::after {
     background-color: $color-main-light;
-  }
-}
-
-.advantages__swiper.swiper {
-  margin: 0 auto;
-
-  @media (min-width: $desktop-width) {
-    overflow: visible;
   }
 }
 
