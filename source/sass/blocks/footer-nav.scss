@@ -1,0 +1,195 @@
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 21px;
+
+    gap: 0;
+    grid-template-columns: 200px 1fr auto;
+    justify-items: center;
+  }
+}
+
+.footer-nav__logo {
+  justify-self: center;
+}
+
+.footer-nav__list {
+  display: grid;
+  justify-content: space-between;
+  align-self: stretch;
+
+  grid-template-columns: repeat(2, auto);
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.footer-nav__item {
+  min-width: 120px;
+  padding: 0 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    &:nth-child(1) {
+      order: 1; /* Туры */
+    }
+
+    &:nth-child(2) {
+      order: 3; /* Обучение */
+    }
+
+    &:nth-child(3) {
+      order: 5; /* О нас */
+    }
+
+    &:nth-child(4) {
+      order: 2; /* Отзывы */
+    }
+
+    &:nth-child(5) {
+      order: 4; /* Фотографии */
+    }
+
+    &:nth-child(6) {
+      order: 6; /* Контакты */
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    min-width: auto;
+    padding: 10px 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 5px;
+
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: none;
+
+    border: none;
+  }
+}
+
+.footer-nav__link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    left: -5px;
+
+    height: 1px;
+
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -4px;
+    bottom: -1px;
+    left: -5px;
+
+    border: 1px solid transparent;
+
+    transition: opacity 0.3s;
+
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    background-color: $color-main-dark;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus::before,
+  &:focus-visible::before {
+    border: 1px solid $color-main-dark;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-basic-accent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+  }
+}
+
+.footer-nav__contacts {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 200px;
+    margin-top: 3px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-basic-accent;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-accent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+  }
+}

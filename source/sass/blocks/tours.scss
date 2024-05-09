@@ -220,20 +220,22 @@
     width: 100%;
     height: 100%;
 
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6) 22.3%,
-      transparent 60.32%
-    );
-
-    inset: 0;
-
-    @media (min-width: $desktop-width) {
-      background: linear-gradient(
+    background:
+      linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         transparent 60.32%
       );
+
+    inset: 0;
+
+    @media (min-width: $desktop-width) {
+      background:
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 22.3%,
+          transparent 60.32%
+        );
     }
   }
 }
@@ -464,22 +466,6 @@
     padding: 9px 9px 10px;
   }
 
-  & svg {
-    z-index: 2;
-
-    display: block;
-    flex-shrink: 0;
-    width: 10px;
-    height: 14px;
-
-    fill: none;
-    stroke: currentColor;
-
-    @media (min-width: $desktop-width) {
-      padding-left: 1px;
-    }
-  }
-
   &:hover {
     color: rgba(2, 102, 193, 0.1);
   }
@@ -498,6 +484,22 @@
   &:disabled,
   &--disabled {
     color: $color-disabled;
+  }
+}
+
+.tours__link svg {
+  z-index: 2;
+
+  display: block;
+  flex-shrink: 0;
+  width: 10px;
+  height: 14px;
+
+  fill: none;
+  stroke: currentColor;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
   }
 }
 

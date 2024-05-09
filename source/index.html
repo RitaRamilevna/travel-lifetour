@@ -944,14 +944,161 @@
         </div>
       </section>
 
-      <!--  <section class="form" id="form" data-test="form">
-        form
-      </section> -->
+      <section class="feedback" id="form" data-test="form">
+        <div class="feedback__container container">
+
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+
+          <div class="feedback__intro">
+            <h3>Остались вопросы?</h3>
+            <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
+          </div>
+
+          <fieldset class="feedback__form form">
+            <legend class="visually-hidden">Форма обратной связи</legend>
+            <div class="form__container">
+
+              <form class="form__contacts" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form__group">
+
+                  <div class="form__item form__item-phone">
+                    <input class="form__input form__input-phone" name="phone" type="tel" id="form-phone" required>
+                    <label class="form__label form__label-phone" for="form-phone">Телефон</label>
+                  </div>
+
+                  <div class="form__item form__item-email">
+                    <input class="form__input form__input-email" name="email" type="email" id="form-email" required>
+                    <label class="form__label form__label-email" for="form-email">Email</label>
+                  </div>
+
+                </div>
+
+                <button class="form__button button" type="submit">Отправить</button>
+
+              </form>
+            </div>
+          </fieldset>
+
+        </div>
+
+      </section>
 
     </main>
 
     <footer class="footer" id="footer" data-test="footer">
-      footer
+
+      <section class="footer__contacts contacts" id="contacts">
+
+        <div class="contacts__container container">
+
+          <div class="contacts__title title">
+            <h2 data-content="Контакты">Контакты</h2>
+          </div>
+
+          <div class="contacts__intro">
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          </div>
+
+          <ul class="contacts__list list-reset">
+
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">Телефон</h3>
+              <a class="contacts__item-description link-reset" href="tel:+79837454545">+7 983 745-45-45</a>
+            </li>
+
+            <li class="contacts__item contacts__item--email">
+              <h3 class="contacts__item-title">Email</h3>
+              <a class="contacts__item-description link-reset" href="mailto:info@lifetour.com&body=привет?subject=вопрос">info@lifetour.com</a>
+            </li>
+
+            <li class="contacts__item contacts__item--address">
+              <h3 class="contacts__item-title">Адрес</h3>
+              <address class="contacts__item-description">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="contacts__map map">
+          <a class="map__image link-reset" href="https://maps.app.goo.gl/SiNuzJXLt2iFzGAn8">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1.webp 1x, img/footer/map-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/footer/map-tablet@1.webp 1x, img/footer/map-tablet@2.webp 2x">
+              <source type="image/webp" srcset="img/footer/map-mobile@1.webp 1x, img/footer/map-mobile@2.webp 2x">
+              <source type="image/png" media="(min-width: 1440px)" srcset="img/footer/map-desktop@1.png, img/footer/map-desktop@2.png 2x">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/footer/map-tablet@1.png, img/footer/map-tablet@2.png 2x">
+              <img src="img/footer/map-mobile@1.png" srcset="img/footer/map-mobile@2.png 2x" alt="Наш адрес: г. Москва, пр-т Мира, д. 14, офис 101." width="320" height="343">
+            </picture>
+          </a>
+        </div>
+
+      </section>
+
+      <div class="footer__container container">
+
+        <nav class="footer__nav footer-nav">
+          <a class="footer-nav__logo logo" href="index.html" aria-current="page">
+            <picture>
+              <img src="img/logo-footer.svg" width="142" height="42" alt="Логотип компании Lifetour.">
+            </picture>
+          </a>
+
+          <ul class="footer-nav__list list-reset">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#tours">Туры</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#training">Обучение</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#about">О нас</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#reviews">Отзывы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#gallery">Фотографии</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link link-reset" href="#form">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="footer-nav__contacts link-reset" href="tel:88007253232">8 800 725-32-32</a>
+        </nav>
+
+        <ul class="footer__social social list-reset">
+          <li class="social__item">
+            <a class="social__link link" href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+              <svg class="social__icon" width="33" height="30">
+                <title class="visually-hidden">Иконка соцсети Вконтакте.</title>
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link link" href="https://ok.ru/htmlacademy" aria-label="Одноклассники.">
+              <svg class="social__icon" width="33" height="30">
+                <title class="visually-hidden">Иконка соцсети Одноклассники.</title>
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link link" href="https://www.instagram.com/htmlacademy/" aria-label="reddit.">
+              <svg class="social__icon" width="33" height="30">
+                <title class="visually-hidden">Иконка соцсети Реддит.</title>
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__privacy link-reset" href="#">Политика конфиденциальности</a>
+
+      </div>
+
     </footer>
 
   </div>

@@ -1,0 +1,47 @@
+.footer__contacts {
+  padding-top: 18px;
+
+  border-bottom: 1px solid rgba($color-main-dark, 0.2);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
+  }
+}
+
+.footer__privacy {
+  align-self: center;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+
+  &:hover {
+    color: $color-basic-accent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-basic-accent;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-accent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+  }
+}

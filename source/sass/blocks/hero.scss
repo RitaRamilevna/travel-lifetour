@@ -34,90 +34,108 @@
 }
 
 .hero__item:nth-child(1)::before {
-  background-image: $gradient-main-slider,
+  background-image:
+    $gradient-main-slider,
     url("../img/hero/1-hero-mobile@1.jpg");
 
   @media (min-resolution: $retina) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/1-hero-mobile@2.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/1-hero-tablet@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/1-hero-tablet@2.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/1-hero-desktop@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/1-hero-desktop@2.jpg");
     }
   }
 }
 
 .hero__item:nth-child(2)::before {
-  background-image: $gradient-main-slider,
+  background-image:
+    $gradient-main-slider,
     url("../img/hero/2-hero-mobile@1.jpg");
 
   @media (min-resolution: $retina) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/2-hero-mobile@2.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/2-hero-tablet@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/2-hero-tablet@2.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/2-hero-desktop@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/2-hero-desktop@2.jpg");
     }
   }
 }
 
 .hero__item:nth-child(3)::before {
-  background-image: $gradient-main-slider,
+  background-image:
+    $gradient-main-slider,
     url("../img/hero/3-hero-mobile@1.jpg");
 
   @media (min-resolution: $retina) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/3-hero-mobile@2.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/3-hero-tablet@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/3-hero-tablet@2.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: $gradient-main-slider,
+    background-image:
+      $gradient-main-slider,
       url("../img/hero/3-hero-desktop@1.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: $gradient-main-slider,
+      background-image:
+        $gradient-main-slider,
         url("../img/hero/3-hero-desktop@2.jpg");
     }
   }
@@ -289,9 +307,7 @@
   }
 }
 
-.hero__swiper.swiper-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.hero__swiper.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
 }
 

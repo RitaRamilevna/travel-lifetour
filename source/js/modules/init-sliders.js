@@ -253,4 +253,3 @@ export function initGallerySlider() {
   return gallerySlider;
 
 }
-
