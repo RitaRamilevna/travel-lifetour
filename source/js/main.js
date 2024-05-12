@@ -1,8 +1,6 @@
 import { menuOpen } from './modules/menu-open';
 import { initHeroSlider, initToursSlider, initTrainingSlider, initReviewsSlider, initAdvantagesSlider, initGallerySlider } from './modules/init-sliders';
 import { validateForm } from './modules/form-validate';
-//import { manageInputLabelVisibility } from './modules/input-visibility';
-
 
 document.addEventListener('DOMContentLoaded', () => {
   menuOpen();
@@ -15,7 +13,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   validateForm();
 });
-
-/* window.addEventListener('load', () => {
-  manageInputLabelVisibility();
-}); */

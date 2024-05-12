@@ -18,7 +18,7 @@ export function initHeroSlider() {
     observer: true,
     observeParents: true,
     slidesPerView: 1,
-    simulateTouch: false,
+
     pagination: {
       el: '.hero__pagination',
       clickable: true,
@@ -67,7 +67,7 @@ export function initToursSlider() {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-
+        autoHeight: true,
       },
       // when window width is >= 768px
       768: {
@@ -109,7 +109,7 @@ export function initTrainingSlider() {
         initialSlide: 2,
         slidesPerView: 1,
         spaceBetween: 15,
-
+        autoHeight: true,
       },
       // when window width is >= 768px
       768: {
@@ -121,7 +121,6 @@ export function initTrainingSlider() {
         slidesPerView: 4,
         spaceBetween: 20,
         simulateTouch: false,
-
       },
     },
   });
@@ -149,6 +148,7 @@ export function initReviewsSlider() {
     breakpoints: {
       // when window width is >= 320px
       320: {
+        autoHeight: true,
         slidesPerView: 1,
         spaceBetween: 20,
       },
@@ -170,7 +170,6 @@ export function initReviewsSlider() {
   return reviewsSlider;
 
 }
-
 
 export function initAdvantagesSlider() {
   const advantagesSlider = new Swiper('.advantages__swiper', {
@@ -200,7 +199,6 @@ export function initAdvantagesSlider() {
         spaceBetween: 30,
         simulateTouch: false,
         centeredSlides: true,
-
       },
     },
   });

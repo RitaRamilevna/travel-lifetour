@@ -131,7 +131,7 @@
 
   &:focus,
   &:focus-visible {
-    background-color: transparent;
+    background-color: $color-main-light;
     border-color: transparent;
     outline: none;
   }
@@ -219,6 +219,8 @@
   display: block;
   width: 100%;
   height: 100%;
+
+  background-color: $color-main-light;
 
   object-fit: cover;
 }

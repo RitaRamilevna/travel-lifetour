@@ -4,6 +4,8 @@
   min-height: 343px;
   margin: 0 auto;
 
+  background-color: $color-main-light;
+
   @media (min-width: $tablet-width) {
     min-height: 340px;
   }

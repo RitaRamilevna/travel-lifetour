@@ -64,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
 
     gap: 40px;
   }
@@ -174,6 +175,24 @@
 
     font-size: 16px;
     line-height: 150%;
+  }
+
+  &:hover {
+    color: $color-basic-accent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-basic-accent;
+  }
+
+  &:active {
+    color: $color-accent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
   }
 }
 

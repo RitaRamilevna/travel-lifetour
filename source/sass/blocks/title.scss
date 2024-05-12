@@ -24,10 +24,10 @@
   }
 }
 
-.title h2::after {
-  content: attr(data-content);
+.title span {
+  content: "";
   position: absolute;
-  top: -17px;
+  top: -15px;
   left: 0;
   z-index: 1;
 
