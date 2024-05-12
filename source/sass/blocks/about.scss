@@ -13,18 +13,20 @@
     height: 400px;
     margin-top: 20px;
 
-    background-image: image-set(
-      url("../img/about/about-mobile@1.webp") type("image/webp") 1x,
-      url("../img/about/about-mobile@1.png") type("image/jpeg") 1x
-    );
+    background-image:
+      image-set(
+        url("../img/about/about-mobile@1.webp") type("image/webp") 1x,
+        url("../img/about/about-mobile@1.png") type("image/jpeg") 1x
+      );
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: $retina) {
-      background-image: image-set(
-        url("../img/about/about-mobile@2.webp") type("image/webp") 2x,
-        url("../img/about/about-mobile@2.png") type("image/jpeg") 2x
-      );
+      background-image:
+        image-set(
+          url("../img/about/about-mobile@2.webp") type("image/webp") 2x,
+          url("../img/about/about-mobile@2.png") type("image/jpeg") 2x
+        );
     }
 
     @media (min-width: $tablet-width) {
@@ -36,16 +38,18 @@
       width: 542px;
       height: 350px;
 
-      background-image: image-set(
-        url("../img/about/about-tablet@1.webp") type("image/webp") 1x,
-        url("../img/about/about-tablet@1.png") type("image/jpeg") 1x
-      );
+      background-image:
+        image-set(
+          url("../img/about/about-tablet@1.webp") type("image/webp") 1x,
+          url("../img/about/about-tablet@1.png") type("image/jpeg") 1x
+        );
 
       @media (min-resolution: $retina) {
-        background-image: image-set(
-          url("../img/about/about-tablet@2.webp") type("image/webp") 2x,
-          url("../img/about/about-tablet@2.png") type("image/jpeg") 2x
-        );
+        background-image:
+          image-set(
+            url("../img/about/about-tablet@2.webp") type("image/webp") 2x,
+            url("../img/about/about-tablet@2.png") type("image/jpeg") 2x
+          );
       }
 
       @media (min-width: $desktop-width) {
@@ -57,16 +61,18 @@
         height: 498px;
         margin-left: 0;
 
-        background-image: image-set(
-          url("../img/about/about-desktop@1.webp") type("image/webp") 1x,
-          url("../img/about/about-desktop@1.png") type("image/jpeg") 1x
-        );
+        background-image:
+          image-set(
+            url("../img/about/about-desktop@1.webp") type("image/webp") 1x,
+            url("../img/about/about-desktop@1.png") type("image/jpeg") 1x
+          );
 
         @media (min-resolution: $retina) {
-          background-image: image-set(
-            url("../img/about/about-desktop@2.webp") type("image/webp") 2x,
-            url("../img/about/about-desktop@2.png") type("image/jpeg") 2x
-          );
+          background-image:
+            image-set(
+              url("../img/about/about-desktop@2.webp") type("image/webp") 2x,
+              url("../img/about/about-desktop@2.png") type("image/jpeg") 2x
+            );
         }
       }
     }

@@ -950,10 +950,14 @@
           <h3>Остались вопросы?</h3>
           <p>Заполните форму и наш оператор свяжется <br>с вами для консультации.</p>
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label" for="phone">Телефон</label>
-            <input class="form__input form__input-phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="Email" required>
+            <div class="form__item">
+              <label class="form__label form__label-phone" for="phone">Телефон</label>
+              <input class="form__input form__input-phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label  form__label-email" for="email">Email</label>
+              <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="Email" required>
+            </div>
             <button class="form__button button" type="submit">Отправить</button>
           </form>
         </div>
@@ -990,7 +994,11 @@
 
             <li class="contacts__item contacts__item--address">
               <h3 class="contacts__item-title">Адрес</h3>
-              <address class="contacts__item-description">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+              <address class="contacts__item-description">
+                <a class="contacts__item-adress link-reset" href="https://maps.app.goo.gl/SiNuzJXLt2iFzGAn8">
+                  г. Москва, пр-т Мира, <br>д. 14, офис 101
+                </a>
+              </address>
             </li>
 
           </ul>

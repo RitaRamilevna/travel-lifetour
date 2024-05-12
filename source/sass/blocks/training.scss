@@ -68,10 +68,12 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    max-width: 80%;
     margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 70%;
     margin-bottom: 32px;
   }
 }

@@ -12,18 +12,20 @@
       width: 768px;
       height: 402px;
 
-      background-image: image-set(
-        url("../img/advantages/1-clouds@1.webp") type("image/webp") 1x,
-        url("../img/advantages/1-clouds@1.png") type("image/jpeg") 1x
-      );
+      background-image:
+        image-set(
+          url("../img/advantages/1-clouds@1.webp") type("image/webp") 1x,
+          url("../img/advantages/1-clouds@1.png") type("image/jpeg") 1x
+        );
       background-repeat: no-repeat;
       background-size: 768px 402px;
 
       @media (min-resolution: $retina) {
-        background-image: image-set(
-          url("../img/advantages/1-clouds@2.webp") type("image/webp") 2x,
-          url("../img/advantages/1-clouds@2.png") type("image/jpeg") 2x
-        );
+        background-image:
+          image-set(
+            url("../img/advantages/1-clouds@2.webp") type("image/webp") 2x,
+            url("../img/advantages/1-clouds@2.png") type("image/jpeg") 2x
+          );
       }
     }
   }
@@ -40,18 +42,20 @@
       width: 768px;
       height: 264px;
 
-      background-image: image-set(
-        url("../img/advantages/2-clouds@1.webp") type("image/webp") 1x,
-        url("../img/advantages/2-clouds@1.png") type("image/jpeg") 1x
-      );
+      background-image:
+        image-set(
+          url("../img/advantages/2-clouds@1.webp") type("image/webp") 1x,
+          url("../img/advantages/2-clouds@1.png") type("image/jpeg") 1x
+        );
       background-repeat: no-repeat;
       background-size: 768px 264px;
 
       @media (min-resolution: $retina) {
-        background-image: image-set(
-          url("../img/advantages/2-clouds@2.webp") type("image/webp") 2x,
-          url("../img/advantages/2-clouds@2.png") type("image/jpeg") 2x
-        );
+        background-image:
+          image-set(
+            url("../img/advantages/2-clouds@2.webp") type("image/webp") 2x,
+            url("../img/advantages/2-clouds@2.png") type("image/jpeg") 2x
+          );
       }
     }
   }
